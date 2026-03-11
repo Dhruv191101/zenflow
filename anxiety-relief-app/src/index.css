@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --purple-light: #e9d5ff;
+  --blue-light: #bfdbfe;
+  --pink-light: #fce7f3;
+  --indigo: #4f46e5;
+  --indigo-dark: #3730a3;
+  --text-dark: #1e1b4b;
+  --text-mid: #4338ca;
+  --text-light: rgba(79,70,229,0.5);
+
+  --glass-bg: rgba(255,255,255,0.22);
+  --glass-border: rgba(255,255,255,0.55);
+  --glass-shadow: 0 20px 60px rgba(79,70,229,0.18), 0 4px 16px rgba(79,70,229,0.1);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: linear-gradient(-45deg, #e9d5ff, #bfdbfe, #fce7f3, #c7d2fe);
+  background-size: 400% 400%;
+  animation: liquidFlow 14s ease-in-out infinite;
+}
+
+@keyframes liquidFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}

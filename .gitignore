@@ -1,0 +1,41 @@
+# Gitignore for ZenFlow monorepo
+
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Vite build output
+zenflow-client/dist/
+zenflow-client/.vite/
+
+# Server build output (if applicable)
+zenflow-server/dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+zenflow-client/.env
+zenflow-server/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+
+# Temp
+tmp/
+temp/
